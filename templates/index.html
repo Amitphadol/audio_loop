@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Looper</title>
+</head>
+<body>
+    <h1>Upload Audio File</h1>
+    <form action="/upload/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="audio/*" required>
+        <button type="submit">Upload</button>
+    </form>
+    <h1>Process Audio File</h1>
+    <form action="/process/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="audio/*" required>
+        <label for="loops">Number of loops:</label>
+        <input type="number" name="loops" min="1" value="1" required>
+        <button type="submit">Process</button>
+    </form>
+</body>
+</html>
